@@ -1,0 +1,20 @@
+body{
+  background-color: black;
+  ;
+}
+
+header{
+  background-color: rgb(19, 184, 199); /* está propriedade altera a cor de fundo do elemento*/
+  background-image: linear-gradient(90deg, rgb(1, 29, 29), rgb(19, 184, 199));
+  padding:25px; /*com dois números ele adiciona em cima baixo e direita esquerda*/
+}
+
+h1,h3 {
+  color:rgb(19, 184, 199);
+}
+
+p, ul, .corroxa {
+  color: white;
+}
+
+
