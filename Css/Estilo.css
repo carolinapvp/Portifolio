@@ -1,12 +1,45 @@
-body{
+body {
   background-color: black;
-  ;
+  font-size: 20px;
 }
 
-header{
+header {
+  
   background-color: rgb(19, 184, 199); /* está propriedade altera a cor de fundo do elemento*/
   background-image: linear-gradient(90deg, rgb(1, 29, 29), rgb(19, 184, 199));
-  padding:25px; /*com dois números ele adiciona em cima baixo e direita esquerda*/
+  padding:30px; /*com dois números ele adiciona em cima baixo e direita esquerda*/
+  display: flex; /*organiza os elementos nos "filhos" (Nav e IMG)*/
+  flex-direction: column ;
+  /*row coloca as coisas ao lado na ordem*/
+  /*row-reverse dispoe os dados no outro lado e inverte*/
+  /*column coloca em coluna e expande a tela toda*/
+  /*column-reverse coloca em coluna e inverte os dados*/
+  align-items: center;
+  
+}
+
+header img {
+  width: 13%;
+}
+.infos img {
+  width: 50%;
+}
+
+header nav ul {
+  text-transform: uppercase /*Deixa as letras maíusculas, letras escritas em maiusculo  não tem acessibilidade*/;
+/*lowercase minusculo, capitalize primeira maíuscula*/
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 20px 40px;
+  /*cima e baixo -  dir.esq. */
+}
+header nav ul li:hover {
+  background-color: white;
+  color:black;
+  transition: 1s;
+  padding: 9px 40px;
 }
 
 h1,h3 {
@@ -17,4 +50,41 @@ p, ul, .corroxa {
   color: white;
 }
 
+main h1 {
+  text-align: center;
+  padding: 25px;
+}
 
+.redesocial ul img {
+  width: 50px;
+}
+
+.infos img {
+  padding: 0px 20px 0px 0px;
+}
+
+.infos {
+  display: flex;
+  padding: 10px 35px 35px 35px;
+}
+/*font-size para aumentar o tamanho de uma fonte de um elemento*/
+
+.aprendizado {
+  padding: 30px;
+}
+
+.aprendizado .tecnologias {
+  display: flex;
+}
+
+.aprendizado .tecnologias img{
+  width: 150px;
+}
+
+.aprendizado .tecnologias figure {
+ background-color: white;
+ text-align: center;
+ font-size: 25px;
+ margin: 20px auto;
+ padding: 20px;
+}
